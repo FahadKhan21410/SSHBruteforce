@@ -19,7 +19,6 @@ This Python script demonstrates how an SSH brute-force attack works using the `p
 
 ## Project Structure
 * `SSH Bruteforce.py` -> Main Code
-* `rockyou.txt` -> password dictionary
 * `rockyou_strong.txt` -> strong password dictionary
 
 ## Requirements
@@ -58,5 +57,5 @@ To harm, disrupt, or compromise any network, server, or individual
 By using this code, you agree that any and all responsibility lies with you, the user.
 
 ## License
-* This project is licensed under the MIT License - see the [(https://github.com/FahadKhan21410/SSHBruteforce/blob/main/LICENSE)] file for details.
+* This project is licensed under the MIT License - see the [([LICENSE](https://github.com/FahadKhan21410/SSHBruteforce/blob/main/LICENSE))] file for details.
 
