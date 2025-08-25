@@ -6,10 +6,10 @@ from paramiko.ssh_exception import SSHException
 host = ""
 port = 22
 
-with open('C:/Users/TECHNORON/Downloads/Passwords(Dump)/password.txt','r', encoding='latin-1') as u_pass:
+with open('C:/Users/ /Downloads/Passwords(Dump)/password.txt','r', encoding='latin-1') as u_pass:
     passwords = [line.strip() for line in u_pass]
 
-with open('C:/Users/TECHNORON/Downloads/usernames.txt','r') as u_user:
+with open('C:/Users/ /Downloads/usernames.txt','r') as u_user:
     usernames = [line.strip() for line in u_user]
 
 client = paramiko.SSHClient()
@@ -41,6 +41,7 @@ for username in usernames:
             print("UnExpected Error Occurred: ",e)
 
 print("No Matching Credentials Found!")
+
 
 
 
